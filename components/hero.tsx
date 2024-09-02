@@ -1,44 +1,38 @@
-import NextLogo from "./next-logo";
-import SupabaseLogo from "./supabase-logo";
-
 export default function Header() {
   return (
-    <div className="flex flex-col gap-16 items-center">
-      <div className="flex gap-8 justify-center items-center">
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
-      </div>
-      <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
-      <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to build apps with{" "}
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Supabase
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://nextjs.org/"
-          target="_blank"
-          className="font-bold hover:underline"
-          rel="noreferrer"
-        >
-          Next.js
-        </a>
-      </p>
-      <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
+    <>
+      <main className="container mx-auto px-4 py-10">
+
+    <section className="mb-10">
+      <h2 className="text-3xl font-semibold mb-4">What is My Budget App?</h2>
+      <p className="text-lg">My Budget App is a web application that automatically tracks your expenses and income through email notifications. It provides tools for analyzing and visualizing your spending and income, along with setting reminders for credit card payments and more.</p>
+    </section>
+
+
+    <section className="mb-10">
+      <h2 className="text-3xl font-semibold mb-4">Features</h2>
+      <ul className="list-disc list-inside text-lg">
+        <li>Automatic tracking of expenses and income via email notifications.</li>
+        <li>Analysis and visualization tools for better financial management.</li>
+        <li>Create reminders for credit card payments and other bills.</li>
+        <li>Free one-month trial for new users.</li>
+      </ul>
+    </section>
+
+
+    <section className=" p-6 rounded-lg text-center">
+      <h3 className="text-2xl font-bold mb-4">Try My Budget App for Free!</h3>
+      <p className="text-lg mb-6">Sign up today and enjoy a free one-month trial to explore all the features of My Budget App.</p>
+      <a href="#" className="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700 transition duration-300">Get Started Now</a>
+    </section>
+  </main>
+
+
+  <footer className="bg-gray-800 text-white py-6 mt-10">
+    <div className="container mx-auto px-4 text-center">
+      <p>&copy; 2024 My Budget App. All rights reserved.</p>
     </div>
+  </footer>
+    </>
   );
 }
